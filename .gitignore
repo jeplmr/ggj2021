@@ -9,6 +9,13 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Mm]emoryCaptures/
+/[Aa]ssets/Invector-3rdPersonController/*
+/[Aa]ssets/Footstep*
+/[Aa]ssets/MT Assets/*
+/[Aa]ssets/Plugins/*
+/[Aa]ssets/Snowy_Low*
+/[Aa]ssets/Editor Default Resources/*
+/[Aa]ssets/StreamingAssets/*
 
 # Asset meta data should only be ignored when the corresponding asset is also ignored
 !/[Aa]ssets/**/*.meta
@@ -58,3 +65,14 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Invector-3rdPersonController.meta
+Assets/Invector-3rdPersonController/Basic Locomotion LITE.meta
+Assets/MT Assets/Easy Mesh Combiner.meta
+Assets/MT Assets/_AssetsData.meta
+Assets/MT Assets.meta
+Assets/Plugins.meta
+Assets/Plugins/FMOD.meta
+Assets/Footstep(Snow and Grass).meta
+Assets/Audio/Maybe_LnF_POC.mp3
+Assets/Audio/Maybe_LnF_POC.mp3.meta
+fmod_editor.log
