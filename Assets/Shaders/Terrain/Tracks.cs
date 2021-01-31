@@ -18,6 +18,7 @@ public class Tracks : MonoBehaviour
     [Range (0, 1)]
     public float brushStrength; 
 
+    public Texture blank; 
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class Tracks : MonoBehaviour
         terrain = GameObject.FindGameObjectsWithTag("Ground"); 
         layerMask = LayerMask.GetMask("Ground"); 
         _drawMaterial = new Material(_drawShader);    
-        _splatmap = new RenderTexture(1024,1024,0,RenderTextureFormat.ARGBFloat);
+        _splatmap = new RenderTexture(512,512,0,RenderTextureFormat.ARGBFloat);
         _snowMaterial.SetTexture("_Splat", _splatmap);
     }
 
@@ -44,5 +45,11 @@ public class Tracks : MonoBehaviour
             RenderTexture.ReleaseTemporary(temp); 
             }
         }
+    }
+
+    public void ResetSnow(){
+        Debug.Log("ResetSnow()..."); 
+        Graphics.Blit(blank, _splatmap);
+        Graphics.Blit(_splatmap, _drawMaterial); 
     }
 }

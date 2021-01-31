@@ -4,7 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SnowTest.unity
+    guid: 45d38f2882bd1fd4c96921981252b65b
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: e7a7bead7735e8542bac8d7f9eb79277,
       type: 2}
